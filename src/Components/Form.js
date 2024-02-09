@@ -57,7 +57,7 @@ const Form = () => {
           value={name}
           onChange={nameDetails}
         />
-        {nameError && <div className="error">{nameError}</div>}
+        {nameError && <div className="error errorMsg">{nameError}</div>}
       </div>
       <div className="form-group">
         <label htmlFor="age">Enter Your Age:</label>
@@ -68,7 +68,7 @@ const Form = () => {
           value={age}
           onChange={ageDetails}
         />
-        {ageError && <div className="error">{ageError}</div>}
+        {ageError && <div className="error errorMsg">{ageError}</div>}
       </div>
       <button type="submit" className="submit-button">
         Submit
